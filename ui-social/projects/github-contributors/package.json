@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/SumitRajpal/ngx-github-contributors.git"
   },
   "peerDependencies": {
     "@angular/common": "^18.2.0",
