@@ -1,0 +1,29 @@
+{
+  "name": "ngx-github-contributions",
+  "version": "0.0.1",
+  "description": "This library helps to create a ui like github contributors",
+  "keywords": [
+    "github",
+    "contributors",
+    "angular",
+    "ngx",
+    "ui"
+  ],
+  "author": {
+    "name": "Sumit Rajpal",
+    "email": "sumit12rds@gmail.com",
+    "url": "https://github.com/SumitRajpal"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "peerDependencies": {
+    "@angular/common": "^18.2.0",
+    "@angular/core": "^18.2.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
+}
