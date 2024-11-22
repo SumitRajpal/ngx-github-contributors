@@ -1,27 +1,36 @@
 # UiSocial
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12.
+![GitHub Contributors Grid](src/assets/ui.png)
 
-## Development server
+## How to apply
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<github-contributors [config]="config" [data]="data"></github-contributors>
+```typescript
 
-## Code scaffolding
+  /**
+   * @endDate enter the end date in YYYY-MM-DD
+   * @startDate enter the start date in YYYY-MM-DD
+   * @footerTitle enter the footer title in string format
+   * @gridColor sets the color when there no count value enter in string format
+   * @gridHue enter hue in number format between 0 - 255
+   * @gridBackgroundColor set the main container color of grid
+   * @tooltipBackgroundColor set the background color for tooltip
+   * @tooltipTextColor set the test color for tooltip
+   */
+config = {
+    endDate: '2024-12-19', 
+    startDate: '2023-12-19',
+    footerTitle: 'Learn how we count contributions',
+    gridColor: '#161B20',
+    gridBackgroundColor: '#0D1117',
+    tooltipBackgroundColor: '#161b22',
+    tooltipTextColor: '#ffffff',
+    gridHue: 120
+  }
+// data object should follow the object pattern 
+  data = {
+    'yyyy-mm-dd':{count:50,tootltipText:"Your contribution"},
+     'yyyy-mm-dd':{count:100,tootltipText:"Your contribution"},
+  }
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
