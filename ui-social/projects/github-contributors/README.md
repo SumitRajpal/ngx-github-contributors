@@ -1,24 +1,36 @@
-# GithubContributors
+# UiSocial
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.0.
+![GitHub Contributors Grid](../../src/assets/gui.png)
 
-## Code scaffolding
+## How to apply
 
-Run `ng generate component component-name --project github-contributors` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project github-contributors`.
-> Note: Don't forget to add `--project github-contributors` or else it will be added to the default project in your `angular.json` file. 
+<github-contributors [config]="config" [data]="data"></github-contributors>
+```typescript
 
-## Build
+  /**
+   * @endDate enter the end date in YYYY-MM-DD
+   * @startDate enter the start date in YYYY-MM-DD
+   * @footerTitle enter the footer title in string format
+   * @gridColor sets the color when there no count value enter in string format
+   * @gridHue enter hue in number format between 0 - 255
+   * @gridBackgroundColor set the main container color of grid
+   * @tooltipBackgroundColor set the background color for tooltip
+   * @tooltipTextColor set the test color for tooltip
+   */
+config = {
+    endDate: '2024-12-19', 
+    startDate: '2023-12-19',
+    footerTitle: 'Learn how we count contributions',
+    gridColor: '#161B20',
+    gridBackgroundColor: '#0D1117',
+    tooltipBackgroundColor: '#161b22',
+    tooltipTextColor: '#ffffff',
+    gridHue: 120
+  }
+// data object should follow the object pattern 
+  data = {
+    'yyyy-mm-dd':{count:50,tootltipText:"Your contribution"},
+     'yyyy-mm-dd':{count:100,tootltipText:"Your contribution"},
+  }
 
-Run `ng build github-contributors` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Publishing
-
-After building your library with `ng build github-contributors`, go to the dist folder `cd dist/github-contributors` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test github-contributors` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

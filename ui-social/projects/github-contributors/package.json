@@ -1,6 +1,6 @@
 {
-  "name": "ngx-github-contributions",
-  "version": "0.0.1",
+  "name": "ngx-github-contribution",
+  "version": "0.0.4",
   "description": "This library helps to create a ui like github contributors",
   "keywords": [
     "github",
